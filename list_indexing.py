@@ -30,3 +30,19 @@ print(item_list[2:4]) #pobiera 3 element o indexie 2(statrtujemy od zera)
 item_list = ['Snowboard', 'Boots', 'Helmet']
 s, b ,h = item_list
 print(s, b, h)
+
+
+#przykladowa lista i mozliwe operacje do przeprowadzenia na nich
+customer_ids = ['C00001','C00003', 'C00005', 'C00010']
+print(customer_ids)
+type(customer_ids) #spradzanie typu danych
+
+'C00003' in customer_ids #sprawdzanie czy dany element znajduje sie w zbiorze customer_ids
+
+print(int(customer_ids[2][-5:])) # najpierw uzywamy operacji dzielenia(slicing) aby otrzymac ostatnie 5
+#znakow z trzeiego elementu listy, ktorym jest C00005 a pozniej uzywamy int aby przekonwertowac to na 00005
+
+
+print(customer_ids[:2]) #drukowanie dwoch pierwszych elementow listy
+
+
