@@ -6,3 +6,9 @@ elif 'S' in size_in_stock:
     print("It'll be tight but small will do.")
 else:
     print("I'll wait until you have medium.")
+
+
+#example of list
+
+item_list = ['Snowboard', 'Boots','Helmet', 'Googles', 'Bindings']
+item_list [0]
