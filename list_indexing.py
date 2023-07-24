@@ -11,4 +11,8 @@ else:
 #example of list
 
 item_list = ['Snowboard', 'Boots','Helmet', 'Googles', 'Bindings']
-item_list [0]
+print(item_list[0].lower())
+print(item_list[3].lstrip('G')) #poda nam 4 element z listy liczac od 0 jako snowboard
+#zamieniamy 'Boots' na 'Jeans'
+modyfied_list = [item.replace('Boots', 'Jeans')for item in item_list] 
+print(modyfied_list)
