@@ -17,6 +17,10 @@ print(all_items)
 print(all_items *3) #mnozymy liste elementwo w liscie razy 3
 
 
-new_items = ['Coat', 'Backpack', 'Snowpants']
+new_items = ['Coat', 'Backpack', 'Snowpants'] #usuwamy pozycje od 2 indexu do 3 wlacznie
 del new_items[1:3]
+print(new_items)
+
+new_items = ['Coat', 'Backpack', 'Snowpants'] #usuwamy pozycje o nazwie 'Coat'
+new_items.remove('Coat')
 print(new_items)
