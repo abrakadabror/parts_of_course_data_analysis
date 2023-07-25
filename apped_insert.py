@@ -24,3 +24,30 @@ print(new_items)
 new_items = ['Coat', 'Backpack', 'Snowpants'] #usuwamy pozycje o nazwie 'Coat'
 new_items.remove('Coat')
 print(new_items)
+
+#cwiczenia DEMO
+
+customer_ids = ['C00001', 'C00003','C00005', 'C00010'] #0, 1, 2 , 3 - idexy
+print(customer_ids)
+
+customer_ids[1] = 'C00004' #1 oznacza drugi element zbioru
+print(customer_ids)
+
+customer_ids.append('C00011') #dodajemy kolejna pozycje w liscie 
+print(customer_ids)
+
+customer_ids.insert(1, 'C00003') #dodajemy kolejny element zbioru listy na drugiej pozycji 
+print(customer_ids)
+
+new_customer_ids = ['C00012', 'C00015'] 
+all_customers = customer_ids + new_customer_ids # dodajemy nowe elementy do listy customer_ids tworzac liste all_customers
+print(all_customers)
+
+del all_customers[1] #kasujemy pozycje numer 1 czyli 'C00003' z pomoca del
+
+print(all_customers)
+
+if 'C00001' in all_customers: #warunek logiczny jesli C00001 jest w zbiorze all_customers to usun C00005
+    all_customers.remove('C00005')
+print(all_customers)
+
