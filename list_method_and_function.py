@@ -8,3 +8,7 @@ print(max(transaction)) #podaje max wartosc z listy
 print(sorted(transaction)) #sortuje bez przestawiania danych w oryginalnej liscie
 
 print(transaction.index(20.56))  #zwraca info ktory to index w liscie
+
+print(transaction.count(10.44)) #zlicza ile razy dana wartosc wystetpuje w liscie
+print(transaction.reverse())   #obraca wartosci w odworoconej kolejnosci
+print(transaction)
