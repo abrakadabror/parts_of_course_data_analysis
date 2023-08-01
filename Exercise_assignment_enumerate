@@ -1,0 +1,33 @@
+# program ktory przydziela rozne stawki podatku w zalenosci od lokalizacji
+# program which assign a different tax rates according to the localisation of the client
+
+# definujemy liste subtotals
+subtotals = [
+    15.98, 899.97, 799.97, 117.96, 5.99,
+    599.99, 24.99, 1799.94, 99.99
+]
+# definujemy liste location
+location = [
+    'Sun Valley', 'Stowe', 'Mammoth', 'Stowe', 'Sun Valley',
+    'Mammoth', 'Mammoth', 'Mammoth', 'Sun Valley'
+]
+taxes = []  # definujemy puste listy
+totals = []  # def x2 pusta lista
+
+# petla for iteruje po liscie subtotals i korzysta z funkcji enumerate aby uzyska index 'i' i wartosc subtotal dla kazdego elementu w liscie subtotals
+for i, subtotal in enumerate(subtotals):
+
+    if location[i] == 'Sun Valley':  # warunki if
+        tax = round(subtotal * .08, 2)
+    elif location[i] == 'Stowe':
+        tax = round(subtotal * .06, 2)
+    else:
+        tax = round(subtotal * .0775, 2)
+    # Obliczanie sumy (total) po uwzględnieniu opodatkowania:
+    total = round(subtotal + tax, 2)
+
+    taxes.append(tax)  # dodajemy elementy do pustej listy taxes
+    totals.append(total)  # dodajemy elementy do  pustej listy totals
+
+print(taxes)  # drukujemy
+print(totals)
