@@ -55,3 +55,17 @@ prices = [2.99, 3.99, 5.99, 8.99, 10.99, 12.99]
 for i in range(len(inventory)): # petla for w zakressie ilosci wszystkich elementow znajdujacych sie w liscie inventory
     print(f'Price is {prices[i]} and amount is {inventory[i]}') #przechodzimy przez kazdy element listy inventory i prices i drukujemy wynik
     print(round(inventory[i] * prices[i],2))#przechodzimy przez kazdy element listy inventory i prices i drukujemy wynik
+
+#enumerate funcition theory
+#pierwszy program
+euro_list = [5.29, 9.19, 19.69, 23.39, 34.29]
+
+for index, element in enumerate(euro_list):
+    print(index, element) #dla danego indexu wydrukujemy elementy i ich indexy z listy euro_list
+
+#drugi program
+euro_list = [5.29, 9.19, 19.69, 23.39, 34.29]
+item_list = ['Snowboard', 'Boots', 'Helmet', 'Googles', "Bindings"]
+
+for index, element in enumerate(euro_list): #dla kazdego elementu z listy euro_list wydrukujemy odpowiadajacy mu element z listy item_list
+    print(item_list[index], element)
