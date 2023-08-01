@@ -46,3 +46,12 @@ item_list = ['Snowboard', 'Boots', 'Helmet', 'Googles', "Bindings"]
 
 for i in range(len(euro_list)): #w zakresie ilosci elementow znajdujacyh sie w liscie euro_list drukujemy:
     print(f'The {item_list[i].lower()} costs ${euro_list[i]}') 
+
+#DEMO: Looping Over Indices
+
+inventory = [10, 14, 10, 15, 8, 27]
+prices = [2.99, 3.99, 5.99, 8.99, 10.99, 12.99]
+
+for i in range(len(inventory)): # petla for w zakressie ilosci wszystkich elementow znajdujacych sie w liscie inventory
+    print(f'Price is {prices[i]} and amount is {inventory[i]}') #przechodzimy przez kazdy element listy inventory i prices i drukujemy wynik
+    print(round(inventory[i] * prices[i],2))#przechodzimy przez kazdy element listy inventory i prices i drukujemy wynik
