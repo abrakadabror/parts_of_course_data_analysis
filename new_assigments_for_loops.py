@@ -15,3 +15,17 @@ print(value_list)
 iterable = 'Maven'
 for letter in iterable:
     print(letter.upper().lstrip('M').rstrip('N'))
+
+#looping over list 
+customer_ratings = ['5 stars', '3 stars', '5 stars', '4 stars', '1 star', '4 stars', '5 stars', '2 stars', '5 stars']
+
+rating = int(customer_ratings[0][0]) #wyciaglamy pierwszy element listy o indexie 0 i drukujemy
+print(rating)
+
+empty_list_rating = [] #tworzymy pusta liste
+for rating in customer_ratings:
+    empty_list_rating.append(int(rating[0]) #dodajemy element to pustej listy empty_list
+print(empty_list_rating) #drukujemy wyniki
+
+print(round(sum(empty_list_rating) /len(empty_list_rating),1)) #obliczmay srednia i zaaokrogalmy do pierwszego miejsca po przecinku
+
