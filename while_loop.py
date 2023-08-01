@@ -10,3 +10,14 @@ while stock_portfolio < 100000:
 
     print(f' At the end of year {year_counter}: ' +
           f' My balance is ${round(stock_portfolio, 2)}')
+
+# another example /for instansce
+bank_balance = 5000
+month_counter = 0
+
+while bank_balance > 0:  # petla trwa, az do momentu gdy bank_balance przestanie byc wiekszy od 0
+    spending = 1000
+    bank_balance -= spending
+    month_counter += 1
+    print(f' At the end of month{month_counter}: ' +
+          f' My balance is ${round(bank_balance, 2)}')
