@@ -9,3 +9,9 @@ for value in usd_list:
 for value in usd_list:
     value_list.append(round(value * exchange_rate, 2))
 print(value_list)
+
+
+# another mini program to iterate over the value
+iterable = 'Maven'
+for letter in iterable:
+    print(letter.upper().lstrip('M').rstrip('N'))
